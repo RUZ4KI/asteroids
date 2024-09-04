@@ -40,7 +40,7 @@ def main():
                 sys.exit()
             for shot in shots:
                 if asteriod.collides(shot):
-                    asteriod.kill()
+                    asteriod.split()
                     shot.kill()
         for obj in drawable:
             obj.draw(screen)
